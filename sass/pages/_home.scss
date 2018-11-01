@@ -3,11 +3,14 @@
 	padding-top: 20rem;
 	padding-left: 3.5rem;
 
+	@media only screen and (max-width: 768px){
+		padding-top: 14rem;
+	}
+
+	@media only screen and (max-width: 374px){
+        padding-left: 2rem;}
+
 	position: sticky;
-	position: -webkit-sticky;
-	position: -moz-sticky;
-	position: -ms-sticky;
-	position: -o-sticky;
 	top: 0px;
 
 	& img{
