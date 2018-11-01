@@ -11,7 +11,8 @@ html{
 }
 
 body{
-	box-sizing: border-box;
+  box-sizing: border-box;
+  
 }
 
 
@@ -19,35 +20,3 @@ body{
 ::selection {
     color: white;
 }
-
-
-@media only screen and (max-width: 768px){
-
-  
-    header p {
-      width: 70vw;
-      padding-top: 40px;
-    }
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    h3 {
-      font-size: 0.8rem;
-    }
-  
-    nav {
-  
-      width: 125px;
-      top:-5px
-  
-  
-    }
-  
-    section, .project, h1 {
-      padding-right: 7%;
-  
-    }
-  
-  }

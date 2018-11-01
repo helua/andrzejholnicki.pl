@@ -4,6 +4,50 @@
   to {
     transform: rotate(360deg); } }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+    z-index: -1;
+    visibility: hidden; }
+  80% {
+    opacity: 1;
+    transform: translateX(1rem);
+    z-index: 2; }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2; } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+    z-index: -1;
+    visibility: hidden; }
+  80% {
+    opacity: 1;
+    transform: translateX(-1rem);
+    z-index: 2; }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2; } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes pictureAppear {
+  0% {
+    transform: translateX(-4rem); }
+  100% {
+    transform: translateX(0); } }
+
 *,
 *::after,
 *::before {
@@ -20,23 +64,10 @@ body {
 ::selection {
   color: white; }
 
-@media only screen and (max-width: 768px) {
-  header p {
-    width: 70vw;
-    padding-top: 40px; }
-  h1 {
-    font-size: 2rem; }
-  h3 {
-    font-size: 0.8rem; }
-  nav {
-    width: 125px;
-    top: -5px; }
-  section, .project, h1 {
-    padding-right: 7%; } }
-
 html {
   font-family: "Lato";
-  font-weight: 700; }
+  font-weight: 700;
+  word-wrap: break-word; }
 
 h1 {
   font-size: 2rem; }
@@ -45,11 +76,12 @@ h1 {
       font-size: 1.5rem; } }
 
 h2 {
-  font-size: 4rem; }
-  @media only screen and (max-width: 374px) {
+  font-size: 4rem;
+  margin-bottom: 5rem; }
+  @media only screen and (max-width: 414px) {
     h2 {
       font-size: 1.5rem; } }
-  @media only screen and (max-width: 768px) and (min-width: 375px) {
+  @media only screen and (max-width: 768px) and (min-width: 415px) {
     h2 {
       font-size: 3rem; } }
   h2 a {
@@ -62,61 +94,85 @@ header {
   position: fixed;
   left: 12rem;
   top: 4.5rem;
-  z-index: 999999; }
-  @media only screen and (max-width: 621px) {
+  z-index: 2; }
+  @media only screen and (max-width: 425px) {
     header {
       left: 3.5rem;
       top: 8rem; } }
-  @media only screen and (max-width: 374px) {
+  @media only screen and (max-width: 415px) {
     header {
       left: 2rem; } }
-  header .avatar {
-    position: fixed;
-    left: 3.5rem;
-    top: 2rem;
-    z-index: 99999; }
-    @media only screen and (max-width: 374px) {
-      header .avatar {
-        left: 2rem; } }
-    header .avatar img {
-      filter: sepia(0.8);
-      width: 70%; }
-      @media only screen and (max-width: 621px) {
-        header .avatar img {
-          width: 50%; } }
-      header .avatar img:hover {
-        animation-name: spin;
-        animation-duration: 25000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear; }
+
+/*animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-delay: 4.5s;
+    transition: all .2s;*/
+.avatar {
+  position: fixed;
+  top: 2rem;
+  left: 3.5rem;
+  z-index: 2; }
+  @media only screen and (max-width: 415px) {
+    .avatar {
+      left: 2rem; } }
+  .avatar img {
+    filter: sepia(0.4);
+    width: 70%;
+    /*animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+        backface-visibility: hidden;*/ }
+    @media only screen and (max-width: 425px) {
+      .avatar img {
+        width: 50%; } }
+    .avatar img:hover {
+      animation-name: spin;
+      animation-duration: 25000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
 
 .page {
+  position: sticky;
+  top: 0px;
   height: 100vh;
   padding-top: 20rem;
   padding-left: 3.5rem;
-  position: sticky;
-  top: 0px; }
-  @media only screen and (max-width: 768px) {
+  z-index: 1;
+  /*animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-delay: 0.2s;
+    backface-visibility: hidden;*/ }
+  @media only screen and (max-width: 767px) {
     .page {
       padding-top: 14rem; } }
-  @media only screen and (max-width: 374px) {
+  @media only screen and (max-width: 415px) {
     .page {
       padding-left: 2rem; } }
   .page img {
-    height: 9rem;
-    margin-right: 10rem;
-    margin-top: 5rem;
-    filter: grayscale(0.8); }
+    height: 8rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+    filter: grayscale(0.3); }
+    @media only screen and (max-width: 1024px) {
+      .page img {
+        margin-right: 1.6rem;
+        height: 6rem; } }
+    @media only screen and (max-width: 415px) {
+      .page img {
+        margin-right: 1rem;
+        height: 4rem; } }
   .page-1 {
-    background-color: #FFA8B6; }
+    background-image: linear-gradient(to right bottom, #c3e8e6, #b5ebe8); }
   .page-2 {
-    background-color: #E5E3CF; }
+    background-image: linear-gradient(to right bottom, #ffa8b6, #f58fa0); }
   .page-3 {
-    background-color: #EAD5C9; }
+    background-image: linear-gradient(to right bottom, #e5e3cf, #e9e6c2); }
   .page-4 {
-    background-color: #C3E8E6; }
-
-@media only screen and (max-device-width: 1100px) {
-  .page img {
-    display: none;
-    visibility: hidden; } }
+    background-image: linear-gradient(to right bottom, #ead5c9, #e0c2b0); }

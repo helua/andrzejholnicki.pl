@@ -1,47 +1,60 @@
 header {
+    
     position: fixed;
     left: 12rem;
     top: 4.5rem;
+    z-index:2;
+     
+
     
-    z-index: 999999;
-
-
-    @media only screen and (max-width: 621px){
+    @media only screen and (max-width: 425px){
         left: 3.5rem;
         top: 8rem;
     }
-    @media only screen and (max-width: 374px){
+    //telefon
+    @media only screen and (max-width: 415px){
         left: 2rem;}
+
+}
+
+    /*animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-delay: 4.5s;
+    transition: all .2s;*/
 
 .avatar{
     position: fixed;
+    top: 2rem;
     left: 3.5rem;
-    @media only screen and (max-width: 374px){
+    z-index:2;
+
+    @media only screen and (max-width: 415px){
         left: 2rem;}
 
-    top: 2rem;
-    z-index: 99999;
     
-    
-
 
     & img{
-        filter: sepia(.8);
+        filter: sepia(.4);
         width:70%;
 
-        @media only screen and (max-width: 621px){
+        @media only screen and (max-width: 425px){
             width:50%;
         }
 
-       
-
-  
-           
-
-            
         &:hover{
-        animation-name: spin;
-        animation-duration: 25000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;}
-}}}
+            animation-name: spin;
+            animation-duration: 25000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;}
+
+        
+        /*animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-delay: 5s;
+        backface-visibility: hidden;*/
+}}
