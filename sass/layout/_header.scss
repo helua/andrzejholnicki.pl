@@ -1,0 +1,25 @@
+header {
+    position: fixed;
+    left: 12rem;
+    top: 4.5rem;
+    
+    z-index: 999999;}
+
+.avatar{
+    position: fixed;
+    left: 3.5rem;;
+    top: 2rem;
+    z-index: 99999;
+
+
+    & img{
+        filter: sepia(.8);
+        width:70%;
+
+            
+        &:hover{
+        animation-name: spin;
+        animation-duration: 25000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;}
+}}

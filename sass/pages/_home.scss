@@ -1,0 +1,52 @@
+.page{
+	height: 100vh;
+	padding-top: 20rem;
+	padding-left: 3.5rem;
+
+	position: sticky;
+	position: -webkit-sticky;
+	position: -moz-sticky;
+	position: -ms-sticky;
+	position: -o-sticky;
+	top: 0px;
+
+	& img{
+		height: 9rem;
+		margin-right: 10rem;
+		margin-top: 5rem;
+		filter: grayscale(.8);
+
+	}
+
+	
+
+	&-1{
+		background-color: $color-1;
+	}
+
+	&-2{
+		background-color: $color-2;
+
+		
+	}
+
+	&-3{
+		background-color: $color-3;
+		
+
+	}
+
+	&-4{
+		background-color: $color-4;
+		
+	}
+}
+
+
+
+@media only screen 
+    and (max-device-width : 1100px){
+		.page img{
+			display: none;
+			visibility: hidden;
+		}}
