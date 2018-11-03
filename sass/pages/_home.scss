@@ -2,7 +2,7 @@
 	position: sticky;
 	top: 0px;
 	height: 100vh;
-	padding-top: 20rem;
+	padding-top: 15rem;
 	padding-left: 3.5rem;
 	z-index:1;
 	//mały tablet/ telefon
@@ -10,7 +10,7 @@
 		padding-top: 14rem;
 	}
 	//telefon
-	@media only screen and (max-width: 415px){
+	@media only screen and (max-width: 425px){
         padding-left: 2rem;}
 
 	
@@ -24,14 +24,12 @@
 		//mały tablet/ telefon
 		@media only screen 
 		and (max-width : 1024px){
-		//display: none;
-		//visibility: hidden;
 		margin-right: 1.6rem;
 		height: 6rem;
 	}
 		//telefon
 		@media only screen 
-		and (max-width : 415px){
+		and (max-width : 425px){
 			margin-right: 1rem;
 			height: 4rem;}
 

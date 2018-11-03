@@ -8,9 +8,14 @@ html{
 
 h1{ 
     font-size: 2rem;
-    //tablet / telefon
+    //tablet
     @media only screen and (max-width: 768px){
         font-size: 1.5rem;
+    }
+
+    // telefon
+    @media only screen and (max-width: 425px){
+        font-size: 1rem;
     }
     
     
@@ -21,14 +26,15 @@ h2{
     font-size: 4rem;
     margin-bottom: 5rem;
 
-    //telefon
-    @media only screen and (max-width: 414px){
-        font-size: 1.5rem;
-    }
     //tablet
-    @media only screen and (max-width: 768px) and (min-width: 415px){
+    @media only screen and (max-width: 768px){
         font-size: 3rem;
     }
+    //telefon
+    @media only screen and (max-width: 425px){
+        font-size: 1.5rem;
+    }
+    
     
 
     & a{

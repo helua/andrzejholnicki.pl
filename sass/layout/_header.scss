@@ -6,14 +6,12 @@ header {
     z-index:2;
      
 
-    
-    @media only screen and (max-width: 425px){
-        left: 3.5rem;
-        top: 8rem;
-    }
     //telefon
-    @media only screen and (max-width: 415px){
-        left: 2rem;}
+    @media only screen and (max-width: 425px){
+        left: 7.8rem;
+        top: 3.8rem;
+    }
+    
 
 }
 
@@ -30,7 +28,8 @@ header {
     left: 3.5rem;
     z-index:2;
 
-    @media only screen and (max-width: 415px){
+    //telefon
+    @media only screen and (max-width: 425px){
         left: 2rem;}
 
     

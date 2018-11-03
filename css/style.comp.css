@@ -74,16 +74,19 @@ h1 {
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 1.5rem; } }
+  @media only screen and (max-width: 425px) {
+    h1 {
+      font-size: 1rem; } }
 
 h2 {
   font-size: 4rem;
   margin-bottom: 5rem; }
-  @media only screen and (max-width: 414px) {
-    h2 {
-      font-size: 1.5rem; } }
-  @media only screen and (max-width: 768px) and (min-width: 415px) {
+  @media only screen and (max-width: 768px) {
     h2 {
       font-size: 3rem; } }
+  @media only screen and (max-width: 425px) {
+    h2 {
+      font-size: 1.5rem; } }
   h2 a {
     text-decoration: underline;
     color: black; }
@@ -97,11 +100,8 @@ header {
   z-index: 2; }
   @media only screen and (max-width: 425px) {
     header {
-      left: 3.5rem;
-      top: 8rem; } }
-  @media only screen and (max-width: 415px) {
-    header {
-      left: 2rem; } }
+      left: 7.8rem;
+      top: 3.8rem; } }
 
 /*animation-name: moveInRight;
     animation-duration: 1s;
@@ -114,7 +114,7 @@ header {
   top: 2rem;
   left: 3.5rem;
   z-index: 2; }
-  @media only screen and (max-width: 415px) {
+  @media only screen and (max-width: 425px) {
     .avatar {
       left: 2rem; } }
   .avatar img {
@@ -140,7 +140,7 @@ header {
   position: sticky;
   top: 0px;
   height: 100vh;
-  padding-top: 20rem;
+  padding-top: 15rem;
   padding-left: 3.5rem;
   z-index: 1;
   /*animation-name: moveInBottom;
@@ -152,7 +152,7 @@ header {
   @media only screen and (max-width: 767px) {
     .page {
       padding-top: 14rem; } }
-  @media only screen and (max-width: 415px) {
+  @media only screen and (max-width: 425px) {
     .page {
       padding-left: 2rem; } }
   .page img {
@@ -164,7 +164,7 @@ header {
       .page img {
         margin-right: 1.6rem;
         height: 6rem; } }
-    @media only screen and (max-width: 415px) {
+    @media only screen and (max-width: 425px) {
       .page img {
         margin-right: 1rem;
         height: 4rem; } }
