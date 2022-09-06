@@ -1,8 +1,8 @@
 html{
-    font-family: "Lato";
-    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
     word-wrap: break-word;
-
+    width: 100%;
 
 }
 
@@ -25,14 +25,25 @@ h1{
 h2{
     font-size: 4rem;
     margin-bottom: 4rem;
+    padding-left: 3.5rem;
+    margin-top: 5%;
+    & span{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        // font-style: italic  ;
+        // font-size: 3.7rem;
+
+    }
+
 
     //tablet
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 900px){
         font-size: 3rem;
+        padding-left: 0;
+
     }
     //telefon
     @media only screen and (max-width: 425px){
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     
     
@@ -48,5 +59,12 @@ h2{
         }
     }
 }
-
+h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.3rem;
+        @media only screen and (max-width: 425px){
+            font-size: 1rem;
+        }
+    
+}
 

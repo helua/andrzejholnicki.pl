@@ -3,39 +3,69 @@
 	top: 0px;
 	height: 100vh;
 	padding-top: 15rem;
-	padding-left: 3.5rem;
 	z-index:1;
 	//mały tablet/ telefon
 	@media only screen and (max-width: 767px){
-		padding-top: 14rem;
+		padding-top: 9rem;
 	}
 	//telefon
 	@media only screen and (max-width: 425px){
         padding-left: 2rem;}
 
+		
+	.what{
+	
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		scrollbar-width: none;
+		overflow-x: scroll;
+
+		// }
+	}
+	.col{
+		width: 30%;
+		margin-left: 3.333333%;
+		margin-right: 10%;
+		display: inline-block;
+		text-align: center;
+		@media only screen and (max-width: 900px){
+		width: 51vw;
+		}
+		@media only screen and (max-width: 425px){
+		width: 70vw;
+	
+		}
+		& a{
+			color: #000;
+		}
+
+	}
+
 	
 
 	& img{
-		height: 8rem;
-		margin-right: 4rem;
+		height: 25vh;
 		margin-top: 1rem;
-		filter: grayscale(.3);
-
+		padding: 2px;
+		filter: grayscale(.7);
+		transition: .2s;
 		//mały tablet/ telefon
 		@media only screen 
 		and (max-width : 1024px){
-		margin-right: 1.6rem;
-		height: 6rem;
+		height: 20vh;
 	}
 		//telefon
 		@media only screen 
 		and (max-width : 425px){
-			margin-right: 1rem;
-			height: 4rem;}
-
+		}
+		&:hover{
+			filter: grayscale(.2);
+			
+		}
 		}
 
-
+		
 	//kolory
 	&-1{
 		background-image: 
@@ -57,7 +87,6 @@
 		linear-gradient(to right bottom, 
 		rgba($color-3, 1), 
 		rgba($color-3-dark, 1)),;
-	
 	}
 
 	&-4{
@@ -65,6 +94,7 @@
 		linear-gradient(to right bottom, 
 		rgba($color-4, 1), 
 		rgba($color-4-dark, 1)),;
+		
 		
 	}
 
