@@ -20,13 +20,10 @@
 		flex-direction: row;
 		scrollbar-width: none;
 		overflow-x: scroll;
-
-		// }
 	}
 	.col{
 		width: 30%;
-		margin-left: 3.333333%;
-		margin-right: 10%;
+		margin: 2% 10% 4% 3.333333%;
 		display: inline-block;
 		text-align: center;
 		@media only screen and (max-width: 900px){
@@ -47,7 +44,7 @@
 	& img{
 		height: 25vh;
 		margin-top: 1rem;
-		padding: 2px;
+		padding: 10px;
 		filter: grayscale(.7);
 		transition: .2s;
 		//mały tablet/ telefon
